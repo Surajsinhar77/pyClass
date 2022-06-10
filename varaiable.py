@@ -3,8 +3,6 @@
 # _Abc =  67
 
 # print(_Abc)
-
-
 # abc2 =  78
 # print(abc2)
 
