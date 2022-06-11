@@ -15,8 +15,8 @@ while j < countNeg:
         j= j+1
         continue
     else:
-        k = j+1
-        while k < len(ary):
+        k = j+1             # search after ary[j]  
+        while k < len(ary): #
             if ary[k] < 0:
                 temp = ary[j]
                 ary[j] = ary[k]
