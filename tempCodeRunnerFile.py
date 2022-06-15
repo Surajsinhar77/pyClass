@@ -1,1 +1,1 @@
-print("my name is {} and i am {} years old. My fav languageis {}".format(name,age,favTechLang))
+print(hg)
