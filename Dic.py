@@ -32,6 +32,10 @@
 
 # d1 = {"Name":"Suraj", "age":27, "Gender":"Male"}
 
-# for i in d1:
-#     print(d1.get(i))
+# # for i in d1:
+# #     print(d1.get(i))
+
+# d1.pop("Name")
+
+# print(d1)
 

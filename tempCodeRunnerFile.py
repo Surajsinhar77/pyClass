@@ -1,1 +1,4 @@
-print(hg)
+#  a = {}
+# # print(type(a))
+
+# a.pop()
