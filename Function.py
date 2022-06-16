@@ -27,16 +27,47 @@
 # add()
 
 
-def add(a ,b):
-    c = a+b
-    return c
+# def add(a ,b):
+#     c = a+b
+#     return c
 
 
-# print(add(4,5))
-x = add(4,5)
-x=x+1
+# # print(add(4,5))
+# x = add(4,5)
+# x=x+1
 
-print(x)
+# print(x)
 
+
+# a = 18
+
+# def var():
+#     b = 10
+#     # print(b)
+#     print(a)
+
+
+
+# # print(b)
+# var()
+
+
+# def add(x , y):
+#     c = x + y
+#     print(x, y)
+#     # print(c)
+
+# add(5,6)
+# print(c)
+
+
+a = [6,62,63,7,8,89,99,91,9]
+
+def insert(b):
+    a.append(b) 
+
+insert(56)
+insert(89)
+print(a)
 
 

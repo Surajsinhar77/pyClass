@@ -1,4 +1,2 @@
-#  a = {}
-# # print(type(a))
 
-# a.pop()
+    a =  10
