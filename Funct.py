@@ -47,7 +47,7 @@
 
 #     def mult(a, b):
 #         print(a*b)
-    
+
 #     def div(a, b):
 #         print(a/b)
 
@@ -79,15 +79,29 @@
 # print(sum)
 
 
-def addcountnum(x):
-    if(x==0):
-        return x
-    sum = addcountnum(x-1)
-    sum = int(sum)+x 
-    return sum
+# def addcountnum(x):
+#     if(x==0):
+#         return x
+#     sum = addcountnum(x-1)
+#     sum = sum+x 
+#     return sum
 
-ans = addcountnum(10)
-print(ans)
+# ans = addcountnum(10)
+# print(ans)
 
 
+# addcountnum(0)      return x  = 0
+
+# addcountnum(1)  0    return 0+1
+# addcountnum(2)  1    return 1+2
+# addcountnum(3)  3    return 3+3
+# addcountnum(4)  6    return 6+4
+# addcountnum(5)  10   return 10+5
+# addcountnum(6)  15   return 15+6
+# addcountnum(7)  21   return 21+7
+# addcountnum(8)  28   return 28+8
+# addcountnum(9)  36   return 36+9
+# addcountnum(10) 45   return 45+10
+
+# ans  = 55
 
