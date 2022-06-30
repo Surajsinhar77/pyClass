@@ -11,12 +11,11 @@ app.secret_key = "wertyui45678sdfer"
 class details(db.Model):
     emil = db.Column(db.String(50), nullable =False, primary_key = True)
     password = db.Column(db.String(50), nullable =False)
-    address = db.Column(db.String(50), nullable =False)
-    address2 = db.Column(db.String(50), nullable =True)
+    address = db.Column(db.String(100), nullable =False)
+    address2 = db.Column(db.String(100), nullable =True)
     state = db.Column(db.String(50), nullable =False)
     city = db.Column(db.String(50), nullable =False)
     pincode = db.Column(db.Integer, nullable = False)
-
 
 @app.route("/" , methods=['POST','GET'])
 def formPage():
@@ -37,6 +36,5 @@ def formSubmission():
         db.session.commit()
         return "FORM SUCCESFULL SUBMITTED"
     return "Submittion fail"
-
 
 app.run(debug=True)
