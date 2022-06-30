@@ -21,7 +21,7 @@ class details(db.Model):
 def formPage():
     return render_template('index.html') 
 
-@app.route("/formsubmit" , methods = ['POST','GET'])
+@app.route("/formsubmit" , methods = ['POST','GET']) 
 def formSubmission():
     if request.method == 'POST':
         email = request.form.get('email')
@@ -36,5 +36,10 @@ def formSubmission():
         db.session.commit()
         return "FORM SUCCESFULL SUBMITTED"
     return "Submittion fail"
+
+@app.route('/viewdetailpage' ,methods=['POST', 'GET'])
+def viwedetail():
+    dtl = details.query.all()
+    return render_template('details.html' ,details = dtl)
 
 app.run(debug=True)
